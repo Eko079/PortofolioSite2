@@ -162,12 +162,6 @@ Untuk menangani error *Halaman Tidak Ditemukan*, proyek ini menyertakan halaman 
 
 ---
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
----
-
 ## ⚠️ Disclaimer
 
 Proyek ini dibuat dengan bantuan teknologi **AI (Artificial Intelligence)** sebagai alat bantu dalam menulis kode, mendesain antarmuka, dan menyusun dokumentasi.  
