@@ -3,7 +3,7 @@
 ## Portofolio Web Modern & Interaktif
 
 <div align="center">
-  <img src="https://ibb.co/m5c0g7w6" alt="Tangkapan layar proyek" width="600"/>
+  <img src="A.jpeg" alt="Tangkapan layar proyek" width="600"/>
 </div>
 
 <br>
