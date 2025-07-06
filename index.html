@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <link rel="icon" href="https://web.dev/static/articles/building/an-adaptive-favicon/image/example-dark-theme-favico-6a6f6f67bc3e7.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Eko Zuli</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ikon: Lucide -->
+    <script src="https://cdn.jsdelivr.net/npm/lucide-static@latest/umd/lucide.js"></script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid-bg">
+
+    <!-- Header & Navigasi -->
+    <header id="header" class="bg-gray-900/60 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-gray-700/0">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-white">
+                <span class="text-purple-400">&lt;</span> Eko Zuliyanto <span class="text-purple-400">/&gt;</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#hero" class="nav-link text-gray-300 hover:text-purple-400 transition duration-300">Beranda</a>
+                <a href="#about" class="nav-link text-gray-300 hover:text-purple-400 transition duration-300">Tentang</a>
+                <a href="#projects" class="nav-link text-gray-300 hover:text-purple-400 transition duration-300">Proyek</a>
+                <a href="#contact" class="nav-link text-gray-300 hover:text-purple-400 transition duration-300">Kontak</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                 <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 glass-effect border-t-0 rounded-b-lg">
+             <a href="#hero" class="block py-2 nav-link text-gray-300 hover:text-purple-400">Beranda</a>
+             <a href="#about" class="block py-2 nav-link text-gray-300 hover:text-purple-400">Tentang</a>
+             <a href="#projects" class="block py-2 nav-link text-gray-300 hover:text-purple-400">Proyek</a>
+             <a href="#contact" class="block py-2 nav-link text-gray-300 hover:text-purple-400">Kontak</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Bagian Hero -->
+        <section id="hero" class="min-h-screen flex items-center justify-center">
+            <div class="text-center p-8 md:p-12 rounded-2xl glass-effect max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-br from-white to-gray-400">
+                    Hai, Saya Eko Zuli
+                </h1>
+                <h2 class="text-2xl md:text-4xl font-semibold text-purple-400 mb-8">
+                    Saya seorang <span id="typing-text" class="font-bold"></span><span class="typing-cursor"></span>
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
+                    Saya mengubah ide menjadi produk digital yang indah dan fungsional. Berpengalaman dalam menciptakan pengalaman pengguna yang modern dan intuitif.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#projects" class="btn-primary bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full inline-block">
+                        Lihat Proyek Saya
+                    </a>
+                    <a href="#contact" class="btn-secondary bg-gray-700/50 hover:bg-gray-600/50 text-white font-bold py-3 px-8 rounded-full inline-block transition duration-300">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Saya -->
+        <section id="about" class="py-20 md:py-32">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <div class="p-2 rounded-2xl bg-gradient-to-br from-purple-500 to-blue-500">
+                         <img src="https://placehold.co/400x400/111827/a78bfa?text=Eko\nZuli&font=raleway"
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x400/111827/a78bfa?text=Gambar\nProfil';"
+                         alt="Foto Profil Eko Zuli" class="rounded-xl w-full h-auto">
+                    </div>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-4xl font-bold mb-6">Tentang Saya</h2>
+                    <p class="text-gray-300 text-lg mb-4">
+                        Halo! Saya Eko Zuli, seorang pengembang web dan desainer UI/UX yang bersemangat dalam membangun solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah bekerja pada berbagai proyek, mulai dari situs web perusahaan hingga aplikasi web yang kompleks.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-8">
+                        Keahlian saya terletak pada tumpukan teknologi modern seperti React, Node.js, dan Tailwind CSS. Saya percaya bahwa desain yang baik bukan hanya tentang estetika, tetapi juga tentang menciptakan pengalaman yang lancar dan mudah diakses oleh semua orang.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">HTML & CSS</span>
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">JavaScript</span>
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">React</span>
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">Tailwind CSS</span>
+                        <span class="bg-gray-700 text-purple-300 text-sm font-medium px-4 py-2 rounded-full">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Proyek -->
+        <section id="projects" class="py-20 md:py-32">
+            <h2 class="text-4xl font-bold text-center mb-16">Proyek Unggulan</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Kartu Proyek 1 -->
+                <div class="project-card rounded-2xl overflow-hidden p-6 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/a78bfa?text=Proyek+Satu"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/a78bfa?text=Gambar+Proyek';"
+                         alt="Gambar Proyek Satu" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 text-white">Aplikasi Manajemen Tugas</h3>
+                        <p class="text-gray-400 mb-4">Aplikasi web untuk mengelola tugas harian dengan fitur kolaborasi tim. Dibangun dengan React dan Firebase.</p>
+                    </div>
+                    <div class="mt-auto flex justify-between items-center">
+                        <div class="flex space-x-2">
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-purple-300 bg-purple-900/50">React</span>
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-300 bg-blue-900/50">Firebase</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1 group">
+                            Lihat Detail <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kartu Proyek 2 -->
+                <div class="project-card rounded-2xl overflow-hidden p-6 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/a78bfa?text=Proyek+Dua"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/a78bfa?text=Gambar+Proyek';"
+                         alt="Gambar Proyek Dua" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 text-white">Situs E-commerce</h3>
+                        <p class="text-gray-400 mb-4">Platform e-commerce dengan sistem pembayaran terintegrasi dan dasbor admin yang komprehensif.</p>
+                    </div>
+                     <div class="mt-auto flex justify-between items-center">
+                        <div class="flex space-x-2">
+                              <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-300 bg-green-900/50">Vue.js</span>
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-orange-300 bg-orange-900/50">Stripe</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1 group">
+                            Lihat Detail <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kartu Proyek 3 -->
+                <div class="project-card rounded-2xl overflow-hidden p-6 flex flex-col">
+                    <img src="https://placehold.co/600x400/111827/a78bfa?text=Proyek+Tiga"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x400/111827/a78bfa?text=Gambar+Proyek';"
+                         alt="Gambar Proyek Tiga" class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <div class="flex-grow">
+                        <h3 class="text-2xl font-bold mb-3 text-white">Dasbor Analitik</h3>
+                        <p class="text-gray-400 mb-4">Dasbor visualisasi data interaktif untuk memantau metrik bisnis penting secara real-time.</p>
+                    </div>
+                    <div class="mt-auto flex justify-between items-center">
+                        <div class="flex space-x-2">
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-300 bg-red-900/50">Angular</span>
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-indigo-300 bg-indigo-900/50">D3.js</span>
+                        </div>
+                        <a href="#" class="text-purple-400 hover:text-purple-300 font-semibold flex items-center gap-1 group">
+                            Lihat Detail <i data-lucide="arrow-right" class="w-4 h-4 transition-transform group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact" class="py-20 md:py-32">
+            <div class="max-w-3xl mx-auto text-center p-8 rounded-2xl glass-effect">
+                <h2 class="text-4xl font-bold mb-4">Hubungi Saya</h2>
+                <p class="text-gray-400 text-lg mb-10">Punya proyek atau ide yang ingin didiskusikan? Mari kita wujudkan bersama!</p>
+                <form action="#" method="POST" class="w-full text-left">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <input type="text" placeholder="Nama Anda" class="w-full bg-gray-900/70 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 transition focus:border-purple-500">
+                        <input type="email" placeholder="Email Anda" class="w-full bg-gray-900/70 border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-purple-500 transition focus:border-purple-500">
+                    </div>
+                    <textarea placeholder="Pesan Anda" rows="6" class="w-full bg-gray-900/70 border border-gray-700 rounded-lg py-3 px-4 mb-6 focus:outline-none focus:ring-2 focus:ring-purple-500 transition focus:border-purple-500"></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-12 rounded-full">
+                            Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <div class="flex justify-center space-x-6 mb-4">
+                 <a href="#" class="hover:text-purple-400 transition"><i data-lucide="github" class="w-6 h-6"></i></a>
+                 <a href="#" class="hover:text-purple-400 transition"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                 <a href="#" class="hover:text-purple-400 transition"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Eko Zuli. Dibuat dengan <span class="text-red-500">&hearts;</span> dan kode.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>

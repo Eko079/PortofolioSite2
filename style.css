@@ -1,0 +1,65 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Tailwind gray-900 */
+    color: #f9fafb; /* Tailwind gray-50 */
+}
+
+/* Latar belakang dengan pola grid halus */
+.grid-bg {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center;
+}
+
+/* Efek Kaca (Glassmorphism) */
+.glass-effect {
+    background: rgba(31, 41, 55, 0.5); /* gray-800 dengan transparansi */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gaya untuk kartu proyek dengan efek glow */
+.project-card {
+    background: #1f2937; /* gray-800 */
+    border: 1px solid #374151; /* gray-700 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.4), 0 0 10px rgba(59, 130, 246, 0.2);
+    border-color: rgba(168, 85, 247, 0.5);
+}
+
+/* Efek mengetik */
+.typing-cursor {
+    border-right: .15em solid #a78bfa; /* purple-400 */
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #a78bfa; }
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(168, 85, 247, 0.4), 0 4px 6px -2px rgba(168, 85, 247, 0.2);
+}
+.btn-secondary:hover {
+     transform: translateY(-3px);
+}
+
+/* Active nav link style */
+.nav-link.active {
+    color: #a78bfa; /* purple-400 */
+    font-weight: 600;
+}

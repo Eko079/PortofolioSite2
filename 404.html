@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Halaman Tidak Ditemukan</title>
+    
+    <!-- Ikon Web (Favicon) -->
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe9V2MlzK1ghyoJeA41084wCgQIuSvb_ypfw&s">
+    
+    <!-- Menggunakan Tailwind CSS untuk styling cepat dan responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Menggunakan Google Fonts untuk tipografi yang lebih baik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Kustom untuk animasi dan elemen yang tidak mudah dibuat dengan Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Animasi untuk robot agar terlihat melayang */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        /* Animasi untuk bayangan robot */
+        @keyframes shadow-pulse {
+            0% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(0.85); opacity: 0.3; }
+            100% { transform: scale(1); opacity: 0.5; }
+        }
+        
+        /* Animasi untuk mata robot agar berkedip */
+        @keyframes blink {
+            0%, 95%, 100% { transform: scaleY(1); }
+            97% { transform: scaleY(0.1); }
+        }
+
+        /* Animasi baru untuk lengan agar berayun */
+        @keyframes swing-left {
+            0%   { transform: rotate(15deg); }
+            50%  { transform: rotate(-5deg); }
+            100% { transform: rotate(15deg); }
+        }
+
+        @keyframes swing-right {
+            0%   { transform: rotate(-15deg); }
+            50%  { transform: rotate(5deg); }
+            100% { transform: rotate(-15deg); }
+        }
+
+        .robot-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .shadow-pulse {
+            animation: shadow-pulse 4s ease-in-out infinite;
+        }
+        
+        .eye-blink {
+            animation: blink 3s ease-in-out infinite 1s;
+        }
+
+        .arm-left {
+            transform-origin: top center;
+            animation: swing-left 4s ease-in-out infinite;
+        }
+
+        .arm-right {
+            transform-origin: top center;
+            animation: swing-right 4s ease-in-out infinite 0.5s;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 to-gray-800 text-white flex items-center justify-center h-screen overflow-hidden">
+
+    <!-- Kontainer utama yang menengahkan semua konten -->
+    <div class="relative w-full max-w-lg mx-auto p-4">
+        
+        <!-- Teks 404 besar di latar belakang -->
+        <div class="absolute inset-0 flex items-center justify-center z-0">
+            <h1 class="text-[15rem] md:text-[20rem] font-black text-white opacity-5 select-none">404</h1>
+        </div>
+
+        <!-- Konten di depan (Karakter, Teks, Tombol) -->
+        <div class="relative z-10 text-center">
+            
+            <!-- Karakter Robot -->
+            <div class="mb-8">
+                <div class="relative w-48 h-64 mx-auto robot-float">
+                    
+                    <!-- Lengan Kiri (di belakang badan) -->
+                    <div class="absolute top-[38%] left-[calc(50%-80px)] w-10 h-24 arm-left z-0">
+                        <!-- Bahu/Ancor -->
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 bg-slate-500 rounded-full border-4 border-slate-200/80 flex items-center justify-center">
+                            <div class="w-4 h-4 bg-slate-600 rounded-full"></div>
+                        </div>
+                        <!-- Lengan bawah -->
+                        <div class="absolute top-[30px] left-1/2 -translate-x-1/2 w-6 h-12 bg-slate-400 rounded-b-md"></div>
+                        <!-- Tangan -->
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-8 bg-slate-300 rounded-lg -rotate-15"></div>
+                    </div>
+
+                    <!-- Lengan Kanan (di belakang badan) -->
+                    <div class="absolute top-[38%] right-[calc(50%-80px)] w-10 h-24 arm-right z-0">
+                        <!-- Bahu/Ancor -->
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-10 h-10 bg-slate-500 rounded-full border-4 border-slate-200/80 flex items-center justify-center">
+                            <div class="w-4 h-4 bg-slate-600 rounded-full"></div>
+                        </div>
+                        <!-- Lengan bawah -->
+                        <div class="absolute top-[30px] left-1/2 -translate-x-1/2 w-6 h-12 bg-slate-400 rounded-b-md"></div>
+                        <!-- Tangan -->
+                        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-8 bg-slate-300 rounded-lg rotate-15"></div>
+                    </div>
+
+                    <!-- Badan Robot (di depan lengan) -->
+                    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-32 h-32 bg-slate-200 rounded-full z-10"></div>
+                    
+                    <!-- Kepala Robot (paling depan) -->
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-40 h-24 bg-slate-300 rounded-t-full rounded-b-lg border-b-4 border-slate-400 z-20">
+                        <!-- Mata Robot -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center">
+                            <div class="w-8 h-8 bg-cyan-400 rounded-full eye-blink shadow-lg shadow-cyan-400/50"></div>
+                        </div>
+                        <!-- Antena -->
+                        <div class="absolute -top-4 left-1/2 -translate-x-1/2 w-1.5 h-6 bg-slate-400 rounded-full">
+                             <div class="absolute -top-2 -left-1 w-4 h-4 bg-red-500 rounded-full animate-ping"></div>
+                             <div class="absolute -top-2 -left-1 w-4 h-4 bg-red-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bayangan Robot -->
+                <div class="relative w-32 h-8 bg-black/50 rounded-full mx-auto mt-4 shadow-pulse blur-md"></div>
+            </div>
+
+            <!-- Teks Konten -->
+            <h2 class="text-4xl md:text-5xl font-bold text-cyan-300 mb-4">Oops! Kita Tersesat Ketua.</h2>
+            <p class="text-slate-300 text-lg mb-8">
+                Halaman yang Anda cari sepertinya sedang bersembunyi atau mungkin tidak pernah ada di galaksi ini.
+            </p>
+
+            <!-- Tombol Aksi -->
+            <a href="/" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-cyan-500/30">
+                Bawa Saya Pulang
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
