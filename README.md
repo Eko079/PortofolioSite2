@@ -71,13 +71,13 @@ Untuk menangani error *Halaman Tidak Ditemukan*, proyek ini menyertakan halaman 
 1. **Clone repositori ini**:
 
    ```bash
-   git clone https://github.com/NAMA_PENGGUNA_ANDA/NAMA_REPOSITORI_ANDA.git
+   git clone https://github.com/Eko079/PortofolioSite2.git
    ```
 
 2. **Masuk ke direktori proyek**:
 
    ```bash
-   cd NAMA_REPOSITORI_ANDA
+   cd PortofolioSite2
    ```
 
 3. **Buka `index.html` di browser**:  
