@@ -3,7 +3,7 @@
 ## Portofolio Web Modern & Interaktif
 
 <div align="center">
-  <img src="A.jpeg" alt="Tangkapan layar proyek" width="600"/>
+  <img src="A.jpeg" alt="Tangkapan layar proyek" width="900"/>
 </div>
 
 <br>
